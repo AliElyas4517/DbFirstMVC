@@ -15,17 +15,20 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Console.WriteLine("Modified Home Controller");
         return View();
     }
 
     public IActionResult Privacy()
     {
+        Console.WriteLine("Modified Home Controller");
         return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
+        Console.WriteLine("Modified Home Controller");
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
