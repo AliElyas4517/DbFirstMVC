@@ -17,14 +17,14 @@ public class HomeController : Controller
     // Hi, Ali Bhai
     public IActionResult Index()
     {
-        Console.WriteLine("Modified Home Controller By Ali Husnain");
+        Console.WriteLine("This is Modified Home Controller By Ali Husnain");
         return View();
     }
 
     // Hi, Ali Bhai
     public IActionResult Privacy()
     {
-        Console.WriteLine("Modified Home Controller By Ali Husnain");
+        Console.WriteLine("This is Modified Home Controller By Ali Husnain");
         return View();
     }
 
@@ -32,7 +32,7 @@ public class HomeController : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        Console.WriteLine("Modified Home Controller By Ali Husnain");
+        Console.WriteLine("This is Modified Home Controller By Ali Husnain");
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
